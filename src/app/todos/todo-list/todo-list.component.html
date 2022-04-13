@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col">
+    <app-todo-list-item
+      [todo]="todo"
+      *ngFor="let todo of todos"
+    ></app-todo-list-item>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <button (click)="deleteAllTodo()" class="btn btn-danger" type="button">Delete completed tasks</button>
+    <button (click)="completeAllTodo()" class="btn btn-success" type="button">Finish all tasks</button>
+  </div>
+</div>
